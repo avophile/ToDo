@@ -10,4 +10,9 @@ $(document).ready(function(){
         $('.doneTasks .taskList').append('<li>' + inputText + '<button class="removeTask btn btn-danger">Remove task</button></li>');
         this.parentNode.remove(); 
     });
-)};
+
+    $(document).on('click', '.removeTask', function(){
+        this.parentNode.remove();
+    });
+});
+
